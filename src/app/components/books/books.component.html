@@ -32,8 +32,8 @@
 
 <table class="book-table" *ngIf="books.length > 0">
   <tr>
-    <th (click)="sortByTitleHandler()">Title</th>
-    <th (click)="sortByAuthorHandler()">Author</th>
+    <th (click)="sortByTitleHandler()" class="titleHeader">Title</th>
+    <th (click)="sortByAuthorHandler()" class="authorHeader">Author</th>
     <th>ISBN</th>
     <th>Action</th>
   </tr>

@@ -48,7 +48,7 @@ th, td {
   word-break: break-all;
 }
 
-tr:first-child, td:nth-child(2) {
+.titleHeader, .authorHeader {
   cursor: pointer;
 }
 
