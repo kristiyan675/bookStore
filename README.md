@@ -34,9 +34,9 @@ Before you begin, make sure you have the following software installed on your sy
 4. Make sure you don't have any services running on port 3000 and run the json-server
 
    ```bash
-   npm run server or json-server --watch db.json
+   npm run server
 
 5. Make you don't have any services running on port 4200 and run the angular application in a new terminal window
 
    ```bash
-   npm run start or ng-serve --open
+   npm run start
