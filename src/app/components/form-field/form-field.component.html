@@ -8,7 +8,10 @@
           Field is required.
         </div>
         <div *ngIf="formControl.hasError('pattern')">
-          Field should only contain {{ fieldId === 'isbn' ? 'numbers' : 'letters' }}.
+          Field should only contain {{ fieldId === 'isbn' ? 'numbers and hyphens' : 'letters' }}.
+        </div>
+        <div *ngIf="formControl.hasError('maxlength')">
+          Field input exceeds the limit.
         </div>
     </mat-error>
 </div>
