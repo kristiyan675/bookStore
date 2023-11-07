@@ -48,6 +48,10 @@ th, td {
   word-break: break-all;
 }
 
+tr:first-child, td:nth-child(2) {
+  cursor: pointer;
+}
+
 .book-row:nth-child(odd) {
   background-color: rgb(199, 216, 231);
 }

@@ -8,7 +8,14 @@
           Field is required.
         </div>
         <div *ngIf="formControl.hasError('pattern')">
-          Field should only contain {{ fieldId === 'isbn' ? 'numbers and hyphens' : 'letters' }}.
+          <ng-container *ngIf="fieldId === 'isbn'; else authorTitleMessage">
+            Field should contain only numbers and hyphens.
+            <br>
+            Field should start an end with a number.
+          </ng-container>
+          <ng-template #authorTitleMessage>
+            Field should only contain letters.
+          </ng-template>
         </div>
         <div *ngIf="formControl.hasError('maxlength')">
           Field input exceeds the limit.

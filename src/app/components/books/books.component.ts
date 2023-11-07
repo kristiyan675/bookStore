@@ -54,6 +54,7 @@ export class BooksComponent {
       const authorIncludesQuery = book.author.toLowerCase().includes(query);
       return titleIncludesQuery || authorIncludesQuery;
     });
+    this.updateItemsPerPage()
   }
 
   sortByTitleHandler() {
