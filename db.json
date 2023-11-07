@@ -1,28 +1,4 @@
 {
-  "books": [
-    {
-      "title": "dasd",
-      "author": "asdasd",
-      "isbn": "1231231",
-      "coverImage": "https://img.freepik.com/premium-photo/opened-book-with-flying-pages-butterflies-dark-backgroundgenerative-ai_391052-12859.jpg",
-      "id": 1
-    },
-    {
-      "title": "dd sadas asd ads",
-      "author": "sd aasd a",
-      "isbn": "12312312",
-      "coverImage": "https://img.freepik.com/premium-photo/opened-book-with-flying-pages-butterflies-dark-backgroundgenerative-ai_391052-12859.jpg",
-      "id": 2
-    }
-  ],
-  "bookDetails": [
-    {
-      "id": 1,
-      "description": "some description"
-    },
-    {
-      "id": 2,
-      "description": "dsad asd asd das dadsaa"
-    }
-  ]
+  "books": [],
+  "bookDetails": []
 }

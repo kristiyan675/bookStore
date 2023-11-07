@@ -19,4 +19,24 @@ Before you begin, make sure you have the following software installed on your sy
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/kristiyan675/bookStore.git
+
+2. Navigate to folder
+
+   ```bash
+   cd bookstore
+
+3. Install dependencies
+
+   ```bash
+   npm install
+
+4. Make sure you don't have any services running on port 3000 and run the json-server
+
+   ```bash
+   npm run server or json-server --watch db.json
+
+5. Make you don't have any services running on port 4200 and run the angular application in a new terminal window
+
+   ```bash
+   npm run start or ng-serve --open
