@@ -36,7 +36,7 @@ Before you begin, make sure you have the following software installed on your sy
    ```bash
    npm run server
 
-5. Make sure you don't have any services running on port 4200 and run the angular application in a new terminal window
+5. Make sure you don't have any services running on port 4200 and run the app in a new terminal
 
    ```bash
    npm run start
