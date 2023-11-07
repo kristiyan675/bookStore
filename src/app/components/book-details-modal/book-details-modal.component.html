@@ -1,0 +1,12 @@
+<div class="modal-overlay" (click)="closeModal()">
+    <mat-card-content class="modal-content">
+        <div>
+            <h2>{{ book?.title }}</h2>
+            <p>Author: {{ book?.author }}</p>
+            <p>ISBN: {{ book?.isbn }}</p>
+            <p>Description: {{ book?.description || "No desciption" }}</p>
+        </div>
+        <img [src]="book?.coverImage" alt="Book Cover">
+   </mat-card-content>>
+</div>
+  

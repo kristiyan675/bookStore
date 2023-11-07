@@ -1,0 +1,14 @@
+mat-form-field {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+
+mat-error{
+  background-color: rgb(245, 210, 210);
+  display: flex;
+  margin-bottom: 16px;
+}
+
+

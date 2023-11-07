@@ -1,0 +1,11 @@
+h1 {
+    padding-left: 2rem;
+}
+
+.books {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+

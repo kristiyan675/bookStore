@@ -1,0 +1,53 @@
+<div class="sorting">
+  <div class="items-per-page">
+    <mat-form-field class="items-per-page-input">
+      <mat-label>Items per page</mat-label>
+      <mat-select [(ngModel)]="itemsPerPage" (ngModelChange)="updateItemsPerPage()">
+        <mat-option value="5">5</mat-option>
+        <mat-option value="10">10</mat-option>
+        <mat-option value="15">15</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <mat-form-field class="search-input">
+    <input matInput [(ngModel)]="searchQuery" (ngModelChange)="filterBooks()" placeholder="Search by title or author" />
+  </mat-form-field>
+</div>
+
+
+  <div class="search-bar">
+    <button mat-button class="sort-button" (click)="sortByTitleHandler()">
+      Sort by Title ({{ isTitleAscending ? 'Ascending' : 'Descending' }})
+    </button>
+    <button mat-button class="sort-button" (click)="sortByAuthorHandler()">
+      Sort by Author ({{ isAuthorAscending ? 'Ascending' : 'Descending' }})
+    </button>
+
+    <a routerLink="/add-book">
+      <button mat-button class="add-book-link" >Add Book</button>
+    </a>
+  </div>
+
+
+<table class="book-table" *ngIf="books.length > 0">
+  <tr>
+    <th>Title</th>
+    <th>Author</th>
+    <th>ISBN</th>
+    <th>Action</th>
+  </tr>
+  <tr *ngFor="let book of (searchQuery ? filteredBooks : books) | paginate: { itemsPerPage: itemsPerPage, currentPage: currentPage }" class="book-row">
+    <td>{{ book.title }}</td>
+    <td>{{ book.author }}</td>
+    <td>{{ book.isbn }}</td>
+    <td>
+      <button mat-button class="details-button" (click)="openBookDetailsModal(book)">View Details</button>
+    </td>
+  </tr>
+</table>
+
+<div class="no-books-container" *ngIf="books.length === 0">
+  <p class="no-books-message">No Books Added Yet.</p>
+</div>
+<pagination-controls class="pagination-controls" (pageChange)="currentPage = $event" *ngIf="books.length > 0"></pagination-controls>

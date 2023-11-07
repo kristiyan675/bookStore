@@ -1,0 +1,13 @@
+<form [formGroup]="bookForm" (ngSubmit)="onSubmit()"class="form">
+
+    <app-form-field label="Title" type="text" fieldId="title" controlName="title" [formGroup]="bookForm"></app-form-field>
+    <app-form-field label="Author" type="text" fieldId="author" controlName="author" [formGroup]="bookForm"></app-form-field>
+    <app-form-field label="ISBN" type="text" fieldId="isbn" controlName="isbn" [formGroup]="bookForm"></app-form-field>
+    <app-form-field label="Cover Image" type="text" fieldId="coverImage" controlName="coverImage" [formGroup]="bookForm"></app-form-field>
+    <app-form-field label="Description" type="textArea" fieldId="description" controlName="description" [formGroup]="bookForm"></app-form-field>
+    
+    <div class="formbtn">
+      <button mat-button type="submit" [ngStyle]="{'background-color': isFormValid() ? '': 'grey'}" [disabled]="bookForm.invalid">Add Book</button>
+      <a routerLink="/" class="booksRoute" >Back to Books</a>
+    </div>
+  </form>

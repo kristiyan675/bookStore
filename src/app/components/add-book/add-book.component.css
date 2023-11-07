@@ -1,0 +1,47 @@
+form{
+  background-color: blanchedalmond;
+  width: 15rem;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.formbtn{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+button[type="submit"] {
+  background-color: rgb(114, 211, 174);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+button[type="submit"]:hover {
+  background-color: rgb(61, 133, 94);
+}
+
+.booksRoute {
+  display: flex;
+  justify-content: center;  
+  color: rgb(117, 86, 86);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+}
+
+.booksRoute:hover {
+  text-decoration: underline;
+  
+}
+
+@media screen and (max-width: 375px) {
+  .formbtn {
+    flex-direction: column;
+  }
+}

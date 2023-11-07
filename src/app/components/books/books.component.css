@@ -1,0 +1,98 @@
+.search-bar {
+  margin-bottom: 16px;
+}
+
+.no-books-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25%;
+}
+
+.no-books-message {
+  font-size: 24px;
+  text-align: center;
+  padding: 20px;
+  background-color: #c2adad;
+  border-radius: 10px; 
+}
+
+.sorting {
+  display: block;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.items-per-page-input {
+  min-width: 150px;
+  margin-right: 16px;
+}
+
+.sort-button {
+  margin-right: 16px;
+}
+
+.book-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; 
+}
+
+th{
+  background-color: blanchedalmond;
+}
+
+th, td {
+  border: 1px solid #e0e0e0;
+  padding: 8px;
+  text-align: left;
+  max-width: 0;
+  word-break: break-all;
+}
+
+.book-row:nth-child(odd) {
+  background-color: rgb(199, 216, 231);
+}
+
+.book-row:nth-child(even) {
+  background-color: rgb(199, 231, 199);
+}
+
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  background-color: darkcyan;
+  border-radius: 10px;
+  width: fit-content;
+  align-self: center;
+}
+
+.sort-button {
+  background-color: blanchedalmond; 
+  padding: 8px 20px;
+}
+
+.details-button, .add-book-link {
+  padding: 10px 16px; 
+  border-radius: 10px; 
+}
+
+.details-button {
+  background-color: #85b1e0; 
+}
+
+.add-book-link {
+  text-decoration: none;
+  background-color: rgb(199, 231, 199);
+  transition: background-color 0.3s;
+  &:hover {
+    background-color: darkcyan;
+  }
+}
+
+@media (min-width: 500px) {
+  .sorting {
+    display: flex;
+  }
+}

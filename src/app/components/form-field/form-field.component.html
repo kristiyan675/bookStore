@@ -1,0 +1,15 @@
+<div [formGroup]="formGroup" class="form-field">
+    <mat-form-field appearance="fill">
+      <mat-label>{{ label }}</mat-label>
+      <input matInput [type]="type" [id]="fieldId" formControlName="{{ controlName }}">
+    </mat-form-field>
+    <mat-error *ngIf="showError">
+        <div *ngIf="formControl.hasError('required')">
+          Field is required.
+        </div>
+        <div *ngIf="formControl.hasError('pattern')">
+          Field should only contain {{ fieldId === 'isbn' ? 'numbers' : 'letters' }}.
+        </div>
+    </mat-error>
+</div>
+  
