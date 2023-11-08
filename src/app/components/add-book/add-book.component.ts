@@ -12,9 +12,9 @@ import { Router } from '@angular/router';
 export class AddBookComponent {
 
   bookForm: FormGroup = new FormGroup({
-    title: new FormControl('', [Validators.required, Validators.pattern(/^[A-Za-z\s]+$/), Validators.maxLength(30)]),
-    author: new FormControl('',[Validators.required, Validators.pattern(/^[A-Za-z\s]+$/), Validators.maxLength(30)]),
-    isbn: new FormControl('', [Validators.required,Validators.pattern(/^[0-9][0-9\s-]*[0-9]$/), Validators.maxLength(20)]),
+    title: new FormControl('', [Validators.required, Validators.pattern(/^[A-Za-z\s]+$/), Validators.maxLength(40)]),
+    author: new FormControl('',[Validators.required, Validators.pattern(/^[A-Za-z\s]+$/), Validators.maxLength(40)]),
+    isbn: new FormControl('', [Validators.required,Validators.pattern(/^[0-9][0-9\s-]*[0-9]$/), Validators.maxLength(30)]),
     coverImage: new FormControl('', Validators.required),
     description: new FormControl(''),
   });

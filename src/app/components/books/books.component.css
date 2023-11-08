@@ -3,21 +3,26 @@
 }
 
 .no-books-container {
+  align-self: center  ;
   display: flex;
+  justify-content: center;
   height: 25%;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 50%;
+  border-radius: 25px;
 }
 
 .no-books-message {
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
   padding: 20px;
-  background-color: #c2adad;
+  background-color: #f1acac;
   border-radius: 10px; 
 }
 
 .sorting {
-  display: block;
-  align-items: center;
   margin-bottom: 16px;
 }
 
@@ -28,6 +33,15 @@
 
 .sort-button {
   margin-right: 16px;
+  background-color: blanchedalmond;
+}
+
+.sort-button:first-child {
+  padding: 8px 13px;
+}
+
+.sort-button:nth-child(2) {
+  padding: 8px 5px;
 }
 
 .book-table {
@@ -68,11 +82,6 @@ th, td {
   border-radius: 10px;
   width: fit-content;
   align-self: center;
-}
-
-.sort-button {
-  background-color: blanchedalmond; 
-  padding: 8px 20px;
 }
 
 .details-button, .add-book-link {

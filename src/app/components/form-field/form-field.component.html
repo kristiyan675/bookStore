@@ -11,7 +11,7 @@
           <ng-container *ngIf="fieldId === 'isbn'; else authorTitleMessage">
             Field should contain only numbers and hyphens.
             <br>
-            Field should start an end with a number.
+            Field should start and end with a number.
           </ng-container>
           <ng-template #authorTitleMessage>
             Field should only contain letters.

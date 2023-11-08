@@ -48,6 +48,7 @@
 </table>
 
 <div class="no-books-container" *ngIf="books.length === 0">
-  <p class="no-books-message">No Books Added Yet.</p>
+  <p class="no-books-message">No books have been added yet. Click "Add Book" to get started.</p>
 </div>
+
 <pagination-controls class="pagination-controls" (pageChange)="currentPage = $event" *ngIf="books.length > 0"></pagination-controls>
