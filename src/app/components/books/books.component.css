@@ -1,4 +1,4 @@
-.search-bar {
+.search-bar, .sorting{
   margin-bottom: 16px;
 }
 
@@ -22,10 +22,6 @@
   border-radius: 10px; 
 }
 
-.sorting {
-  margin-bottom: 16px;
-}
-
 .items-per-page-input {
   min-width: 150px;
   margin-right: 16px;
@@ -33,16 +29,17 @@
 
 .sort-button {
   margin-right: 16px;
+  width: 15em;
   background-color: blanchedalmond;
 }
 
-.sort-button:first-child {
+/* .sort-button:first-child {
   padding: 8px 13px;
 }
 
 .sort-button:nth-child(2) {
   padding: 8px 5px;
-}
+} */
 
 .book-table {
   width: 100%;
@@ -103,7 +100,7 @@ th, td {
 }
 
 @media (min-width: 500px) {
-  .sorting {
+  .search-bar {
     display: flex;
   }
 }

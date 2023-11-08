@@ -40,3 +40,12 @@ Before you begin, make sure you have the following software installed on your sy
 
    ```bash
    npm run start
+
+
+## Future Improvements
+
+   - Add more validations for the book's ISBN number is a unique number that is assigned to every published book and has 13 digits
+   - Add additional validation for the url of the book cover
+   - Make design more responsive for different layouts
+   - Move the sorting and search-bar elements into separate components
+   - Add inline styling for the elements

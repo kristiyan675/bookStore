@@ -1,4 +1,4 @@
-<div class="sorting">
+<div class="search-bar">
   <div class="items-per-page">
     <mat-form-field class="items-per-page-input">
       <mat-label>Items per page</mat-label>
@@ -16,18 +16,17 @@
 </div>
 
 
-  <div class="search-bar">
-    <button mat-button class="sort-button" (click)="sortByTitleHandler()">
-      Sort by Title ({{ isTitleAscending ? 'Ascending' : 'Descending' }})
-    </button>
-    <button mat-button class="sort-button" (click)="sortByAuthorHandler()">
-      Sort by Author ({{ isAuthorAscending ? 'Ascending' : 'Descending' }})
-    </button>
-
-    <a routerLink="/add-book">
-      <button mat-button class="add-book-link" >Add Book</button>
-    </a>
-  </div>
+<div class="sorting">
+  <button mat-button class="sort-button" (click)="sortByTitleHandler()">
+    Sort by Title ({{ isTitleAscending ? 'Ascending' : 'Descending' }})
+  </button>
+  <button mat-button class="sort-button" (click)="sortByAuthorHandler()">
+    Sort by Author ({{ isAuthorAscending ? 'Ascending' : 'Descending' }})
+  </button>
+  <a routerLink="/add-book">
+    <button mat-button class="add-book-link" >Add Book</button>
+  </a>
+</div>
 
 
 <table class="book-table" *ngIf="books.length > 0">
