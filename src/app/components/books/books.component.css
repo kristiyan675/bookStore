@@ -29,8 +29,11 @@
 
 .sort-button {
   margin-right: 16px;
-  width: 15em;
   background-color: blanchedalmond;
+}
+
+mat-form-field, .sort-button {
+  width: 15rem;
 }
 
 .book-table {
