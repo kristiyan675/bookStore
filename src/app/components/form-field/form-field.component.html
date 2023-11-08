@@ -9,9 +9,7 @@
         </div>
         <div *ngIf="formControl.hasError('pattern')">
           <ng-container *ngIf="fieldId === 'isbn'; else authorTitleMessage">
-            Field should contain only numbers and hyphens.
-            <br>
-            Field should start and end with a number.
+            Field should contain only numbers and hyphens and must start and end with number.
           </ng-container>
           <ng-template #authorTitleMessage>
             Field should only contain letters.
